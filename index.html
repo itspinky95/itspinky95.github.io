@@ -1,9 +1,58 @@
+<!DOCTYPE HTML>
+
 <html>
- 
-<body>
-  <h1>Scott Jones</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+<head>
+    <title>Pinky</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Scott Jones Aspiring Junior Developer">
+    <meta name="keywords" content="Web Dev, dev, coding, junior">
+    <meta name="author" content="Scott Jones">
+    <link rel="stylesheet" href="assets/css/landing.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <!--Landing Page-->
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+
+            <!-- Header -->
+            <header id="header">
+                <h1>Scott Jones</h1>
+                <p>Aspiring Developer &nbsp;&bull;&nbsp; Lifelong Learner</p>
+                <nav>
+                    <ul>
+                        <!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+                        <!--<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+                        <li><a href="https://www.linkedin.com/in/scott-w-jones28/" class="icon brands fa-linkedin"><span
+                                    class="label">Linkedin</span></a></li>
+                        <li><a href="https://github.com/itspinky95" class="icon brands fa-github"><span
+                                    class="label">Github</span></a></li>
+                        <li><a href="mailto:scott-w-jones@hotmail.com" class="icon solid fa-envelope"><span
+                                    class="label">Email</span></a></li>
+                    </ul>
+                    <br>
+                    <button class="button"><a href="/home.html" class="button-module preserve-whitespace--nowrap">Enter
+                            Site</a></button>
+                </nav>
+            </header>
+            <!-- Footer -->
+            <footer id="footer">
+                <span class="copyright">&copy; Copyright May 2021 Scott William Jones. All rights reserved.</span>
+            </footer>
+        </div>
+    </div>
+    <script>
+        window.onload = function () { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function () { return false; }
+        window.onorientationchange = function () { document.body.scrollTop = 0; }
+    </script>
 </body>
- 
+
 </html>
